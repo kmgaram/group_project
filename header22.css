@@ -1,0 +1,63 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+#menu1 {
+    background: #000;
+    height: 50px;
+}
+
+#menu1 ul {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#menu1 .mail>li {
+    float: left;
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #000;
+}
+
+#menu1 .main>li:hover .menu2 {
+    display: block;
+}
+
+#menu1 .main>li a {
+    display: block;
+}
+
+#menu1 .menu2 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+#menu {
+    float: left;
+    width: 25%;
+}
+
+#menu1 .sub li {
+    background: #000;
+}
+
+#menu1 .sub li a:hover {
+    background: #000;
+}

@@ -17,22 +17,18 @@ a {
 
 a:link {
     text-decoration: none;
-    color: #222222;
 }
 
 a:hover {
     text-decoration: none;
-    color: #222222;
 }
 
 a:visited {
     text-decoration: none;
-    color: #222222;
 }
 
 a:active {
     text-decoration: none;
-    color: #222222;
 }
 
 
@@ -51,6 +47,8 @@ a:active {
 .buttons button {
     padding: 3px 20px;
     cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 
@@ -118,6 +116,25 @@ h2 {
     margin-top: 30px;
 }
 
-.container {
+.container2 {
     text-align: center;
+    flex-wrap: 0;
+    margin: -3% -2% 3% 0;
+}
+
+.menu span {
+    color: black;
+}
+
+.menu {
+    margin-top: 5%;
+}
+
+.menu span {
+    margin-right: 3%;
+}
+
+#box {
+    text-align: center;
+    height: 300%;
 }

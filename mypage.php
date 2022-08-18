@@ -1,3 +1,5 @@
+<?php include $_SERVER['DOCUMENT_ROOT']."/group_project/header.php";?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,14 +61,15 @@
 <body>
     <div id="menubar">
         <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="#">MODIFY</a></li>
-                    <li><a href="#">MY MESSAGE BOARD</a></li>
+            <div class="container2">
+                <ul class="menu">
+                    <span><a href="mypage.php">MODIFY</a></span>
+                    <span><a href="message.php">MY MESSAGE BOARD</a></span>
                 </ul>
             </div>
         </nav>
     </div>
+    <div id="box">
     <form name="member" action="modify.php?id=<?=$userid?>" method="post">
 		<h2>회원 정보 수정</h2>
     	<ul class="join_form">
@@ -95,10 +98,11 @@
                 <span class="col2"><input type="text" name="nickname" value="<?=$nickname?>"></span>                     
             </li>
       </ul>                       
-		<ul class="buttons">
+		<ul class="buttons" id="button">
 	        <li><button type="button" onclick="check_input()">저장하기</button></li>
             <li><button type="button" onclick="reset_form()">취소하기</button></li>
         </ul>
     </form>
+</div>
 </body>
 </html>
